@@ -1,8 +1,18 @@
-#円の面積を計算するメソッド
-def area_circle(radius)
-  area = radius * radius * 3.14
-  return area
+def fizzbuzz(max_num)
+
+  (1..max_num).each do |num|
+    if num % 15 == 0
+      puts "FizzBuzz"
+    elsif num % 5 == 0
+      puts "Buzz"
+    elsif num % 3 == 0
+      puts "Fizz"
+    else
+      puts num
+    end
+  end
 end
 
-#メソッドを呼び出す
-puts area_circle(2) #引数に2を指定
+puts 'いくつまで数えますか？'
+num = gets.to_i
+fizzbuzz(num):wq
