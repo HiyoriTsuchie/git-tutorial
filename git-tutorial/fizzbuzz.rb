@@ -17,4 +17,5 @@ end
 
 puts 'いくつまで数えますか？'
 num = gets.to_i
-fizzbuzz(num):wq
+fizzbuzz(num)
+
